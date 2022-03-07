@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Chocolate</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo-pasteleria.jpeg" alt="Logo pasteleria" width="50px" height="50px">
+                </a>
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="contactanos.html">Contactanos</a>
+                    <a href="pedidos.html">Pedidos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="centrar-texto">Llenar Formulario</h2>
+            <form class="contacto" action="">
+                <fieldset>
+                    <legend>Infromacion de contacto</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+
+                    <label for="telefono">Telefono</label>
+                    <input type="number" name="telefono" id="telefono" placeholder="Ingrese su numero">
+
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" placeholder="nombre@correo.com">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles del pastel</legend>
+                    <label for="pastel">Cuantos pasteles?</label>
+                    <input type="number" name="pastel" id="pastel" value="1">
+
+                    <label for="sabor">Elige el sabor de tu agrado</label>
+                    <select name="sabor" id="sabor">
+                        <option value="elije" disabled selected>Elige una opción</option>
+                        <option value="">Pastel de 3 leches con gelatina de mosaico $350</option>
+                        <option value="">Pastel de limon $400</option>
+                        <option value="">Pastel de zanahoria $250</option>
+                    </select>
+
+                    <label for="peso">Cuantos kilos?</label>
+                    <input type="number" name="peso" id="peso" value="1">
+                    <label for="decoracio">Diseño del pastel</label>
+                    <textarea name="decoracion" id="decoracion" cols="30" rows="10" placeholder="Especifica el diseño"></textarea>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles de la entrega</legend>
+
+                    <label for="fecha">Fecha de la entrega</label>
+                    <input type="date" name="fecha" id="fecha">
+                    <label for="hora">Hora de entrega</label>
+                    <input type="time" name="hora" id="hora">
+                    <label for="address">Direccion</label>
+                    <textarea name="address" id="" cols="30" rows="10" placeholder="Deja tu dirección (Se esfecifico)"></textarea>
+
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+    </main>
+
+    <footer>
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="contactanos.html">Contactanos</a>
+                    <a href="pedidos.html">Pedidos</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
